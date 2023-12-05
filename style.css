@@ -1,0 +1,92 @@
+/* https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-color: rgb(92, 107, 248);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.25);
+
+  border: 5px solid rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+
+  width: 450px;
+  height: 600px;
+}
+
+.card section {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.75);
+
+  height: 465px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 1);
+}
+.card section .icon svg {
+  width: 150px;
+  height: 150px;
+}
+.card section .temp {
+  margin: 0 0 1.5rem 0;
+
+  font-size: 5rem;
+}
+.card section .details {
+  margin: 0 0 1rem 0;
+
+  font-size: 3rem;
+}
+.card section .loc {
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.card footer {
+  height: 135px;
+
+  display: flex;
+  align-items: stretch;
+}
+.card footer .left {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 1);
+}
+.card footer .right {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 1);
+}
